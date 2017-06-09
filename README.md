@@ -10,8 +10,8 @@ https://wcchang1382.github.io/ping-pong/
 
 _This is a web page that requests a number input from the user and outputs an unordered list that starts at 1 and counts up to the number entered, subject to the following provisions:_
 * _Numbers that are divisible by three will show an output of "PING!";_
-* _Numbers that are divisible by five will show as "PONG!"; and_
-* _Numbers that are divisible by fifteen will show as "PING-PONG!"._
+* _Numbers that are divisible by five will show an output of "PONG!"; and_
+* _Numbers that are divisible by fifteen will show an output of "PING-PONG!"._
 
 ## Specifications
 * _Web application can count up to the provided number starting from 1_
