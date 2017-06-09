@@ -1,12 +1,11 @@
 $(document).ready(function() {
   $("form#userNumber").submit(function(event) {
-    event.preventDefault();
+    //event.preventDefault();
 
     var userInput = parseInt($("input#numberInput").val());
     var countArray = [];
     var output;
     for (var i = 1; i <= userInput; i++) {
-      //countArray.push(output)
       output = '';
       if (i % 3 === 0 && i % 15 !== 0) {
         output += "PING!";
@@ -25,5 +24,6 @@ $(document).ready(function() {
     countArray.forEach(function(output) {
       $("#countOutput").append("<li>" + output + "</li>");
     });
+    event.preventDefault();
   });
 });
