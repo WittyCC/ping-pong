@@ -1,21 +1,29 @@
-$(document).ready(function()) {
+$(document).ready(function() {
   $("form#userNumber").submit(function(event) {
     event.preventDefault();
-    var countArray = [];
+
     var userInput = parseInt($("input#numberInput").val());
-
-    for (var i = 0; i <= userInput; i++) {
-      countArray.push(i);
+    var countArray = [];
+    var output;
+    for (var i = 1; i <= userInput; i++) {
+      //countArray.push(output)
+      output = '';
+      if (i % 3 === 0 && i % 15 !== 0) {
+        output += "PING!";
+      }
+      if (i % 5 === 0 && i % 15 !== 0) {
+        output += "PONG!";
+      }
+      if (i % 3 === 0 && i % 5 ===0 && i % 15 === 0) {
+         output += "PING-PONG!";
+      }
+      if (output === '') {
+        output +=i;
+      }
+      countArray.push(output);
     }
-
-    if (userInput % 3 === 0) {
-      return "PING!"
-    } else if (userInput % 5 === 0) {
-      return "PONG!"
-    } else if (userInput % 15 === 0) {
-      return "PING-PONG!"
-    }
-
-    $("ul").append("<li>countArray</li>");
-  })
+    countArray.forEach(function(output) {
+      $("#countOutput").append("<li>" + output + "</li>");
+    });
+  });
 });
