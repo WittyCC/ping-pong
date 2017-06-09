@@ -1,3 +1,4 @@
+//user interface logic
 $(document).ready(function() {
   $("form#userNumber").submit(function(event) {
     event.preventDefault();
@@ -7,6 +8,7 @@ $(document).ready(function() {
     var countArray = [];
     var output;
 
+//business logic
     if (userInput > 0) {
       for (var i = 1; i <= userInput; i++) {
         output = '';
@@ -27,10 +29,13 @@ $(document).ready(function() {
     } else {
       alert("Please enter a number greater than 0.");
     }
+
     $("#countOutput").empty();
     countArray.forEach(function(output) {
       $("#countOutput").append("<li>" + output + "</li>");
     });
+
     $("input#numberInput").val("");
+
   });
 });
