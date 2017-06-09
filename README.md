@@ -13,6 +13,22 @@ _This is a web page that requests a number input from the user and outputs an un
 * _Numbers that are divisible by five will show as "PONG!"; and_
 * _Numbers that are divisible by fifteen will show as "PING-PONG!"._
 
+## Specifications
+* _Web application can count up to the provided number starting from 1_
+  - _Example Input: 2_
+  - _Example Output: [1, 2]_
+* _Web application output shows "PING!" if the number is divisible by 3_
+  - _Example Input: 3_
+  - _Example Output: [1, 2, PING!]_
+* _Web application output shows "PONG!" if the number is divisible by 5_
+  - _Example Input: 5_
+  - _Example Output: [1, 2, PING!, 4, PONG!]_
+* _Web application output shows PING-PONG! if the number is divisible by 15_
+  - _Example Input: 15_
+  - _Example Output: [1, 2, PING!, 4, PONG!, PING!, 7, 8, PING!, PONG!, 11, PING!, 13, 14, PING-PONG!]_
+* _The number form entry is cleared after every submission, thus enabling the user to enter another desired number that cycles through the entire process and presents a new count list_
+
+
 ## Setup/Installation Requirements
 
 * _Install a browser of your choice._

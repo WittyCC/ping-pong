@@ -12,17 +12,17 @@
     <div class="container">
       <h1>PING-PONG</h1>
       <h2>How to play</h2>
-      <p>The Ping-Pong application will start counting at 1 up to your desired number, subject to the following provisions:</p>
+      <p>The Ping-Pong application will start counting from 1 up to your desired number, subject to the following provisions:</p>
       <ul>
-        <li>Numbers that are divisible by three will show as "PING!";</li>
-        <li>Numbers that are divisible by five will show as "PONG!";</li>
-        <li>Numbers that are divisible by fifteen will show as "PING-PONG!".</li>
+        <li>Numbers that are divisible by three will show up as "PING!";</li>
+        <li>Numbers that are divisible by five will show up as "PONG!";</li>
+        <li>Numbers that are divisible by fifteen will show up as "PING-PONG!".</li>
       </ul>
       <div class="well">
-        <form id="userNumber">
+        <form id="userNumber" onsubmit="return false">
           <label for="numberInput">Enter a number</label>
           <input id="numberInput" class="form-control" type="text">
-
+          <br></br>
           <button type="submit" class="btn">Begin!</button>
         </form>
       </div>
