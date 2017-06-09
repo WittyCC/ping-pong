@@ -1,6 +1,6 @@
 # _Ping-Pong Web Application_
 
-https://wcchang1382.github.io/track-suggester/
+https://wcchang1382.github.io/ping-pong/
 
 #### By _**Witty Chang**_
 
