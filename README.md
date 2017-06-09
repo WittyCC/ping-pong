@@ -27,6 +27,10 @@ _This is a web page that requests a number input from the user and outputs an un
   - _Example Input: 15_
   - _Example Output: [1, 2, PING!, 4, PONG!, PING!, 7, 8, PING!, PONG!, 11, PING!, 13, 14, PING-PONG!]_
 * _The number form entry is cleared after every submission, thus enabling the user to enter another desired number that cycles through the entire process and presents a new count list_
+* _If a character other than a number greater than 0 is entered, an alert will pop up asking the user to enter a number that is greater than 0_
+  - _Example Input: 0_
+  - _Example Input: x_
+  - _Example Output: alert('Please enter a number greater than 0')_
 
 
 ## Setup/Installation Requirements
