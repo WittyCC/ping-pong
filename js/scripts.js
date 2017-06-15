@@ -1,5 +1,4 @@
 //business logic
-var userInput = parseInt($("input#numberInput").val());
 var countArray = [];
 var output;
 
@@ -9,11 +8,14 @@ function countPingPong(userInput) {
       output = '';
       if (i % 3 === 0 && i % 15 !== 0) {
         output += "PING!";
-      } else if (i % 5 === 0 && i % 15 !== 0) {
+      }
+      if (i % 5 === 0 && i % 15 !== 0) {
         output += "PONG!";
-      } else if (i % 3 === 0 && i % 5 ===0 && i % 15 === 0) {
+      }
+      if (i % 3 === 0 && i % 5 ===0 && i % 15 === 0) {
          output += "PING-PONG!";
-      } else if (output === '') {
+      }
+      if (output === '') {
         output +=i;
       }
       countArray.push(output);
@@ -30,6 +32,8 @@ $(document).ready(function() {
     $("#numberInput").empty();
     $("#countOutput").empty();
 
+    var userInput = parseInt($("input#numberInput").val());
+    
     countPingPong(userInput);
 
     countArray.forEach(function(output) {
